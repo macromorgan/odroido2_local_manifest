@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote	name="gitlab-freedesktop"	fetch="https://gitlab.freedesktop.org/" />
-	<remote	name="github-robherring"	fetch="https://github.com/" />
-	<extend-project	name="platform/external/libdrm"	revision="7942b1865e95768a5ef2fa0655ba965827ac4acb" />
+	<remote  name="glodroid" fetch="https://github.com/glodroid/" />
+	<extend-project	name="platform/external/libdrm"	revision="d3505e46291b7ce7b5eb56544e7dfc0ec5de5540" />
 	<remove-project	name="platform/external/drm_hwcomposer" />
 	<remove-project	name="platform/external/mesa3d" />
-	<project	path="external/drm_hwcomposer"	remote="gitlab-freedesktop"	name="drm-hwcomposer/drm-hwcomposer.git"	revision="d146d6da82c6eb95e61942f341eb0d7a42f55327"	clone-depth="1" />
-	<project	path="external/mesa3d"		remote="gitlab-freedesktop"	name="mesa/mesa.git"				revision="eb6877d3af337f76143755606d4a7aea132526c7"	clone-depth="1" />
-	<project	path="external/gbm_gralloc"	remote="github-robherring"	name="robherring/gbm_gralloc.git"		revision="cecd1a2c8504aad5ce9ad62b27f9653ca09ce9d5"	clone-depth="1" />
+	<project path="external/gbm_gralloc"     remote="glodroid" name="glodroid_forks.git" revision="refs/tags/gbm_gralloc-v2" clone-depth="1" />
+	<project path="external/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" revision="refs/tags/drm_hwcomposer-v1" clone-depth="1" />
+	<project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v5" clone-depth="1" />
 </manifest>
