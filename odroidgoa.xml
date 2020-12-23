@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 	<remote  name="glodroid" fetch="https://github.com/glodroid/" />
+	<remote  name="mesa3d" fetch="https://github.com/mesa3d/" />
 	<extend-project	name="platform/external/libdrm"	revision="d3505e46291b7ce7b5eb56544e7dfc0ec5de5540" />
 	<remove-project	name="platform/external/drm_hwcomposer" />
 	<remove-project	name="platform/external/mesa3d" />
 	<project path="external/gbm_gralloc"     remote="glodroid" name="glodroid_forks.git" revision="refs/tags/gbm_gralloc-v2" clone-depth="1" />
 	<project path="external/drm_hwcomposer"  remote="glodroid" name="glodroid_forks.git" revision="refs/tags/drm_hwcomposer-v1" clone-depth="1" />
-	<project path="external/mesa3d"          remote="glodroid" name="glodroid_forks.git" revision="refs/tags/mesa3d-v5" clone-depth="1" />
+	<project path="external/mesa3d"          remote="mesa3d" name="mesa.git" revision="refs/tags/mesa-20.3.0" clone-depth="1" />
 </manifest>
